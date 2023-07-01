@@ -9,7 +9,7 @@ const NewMovieForm = props => {
         const ot = document.getElementById("openingtext").value;
         const rd = document.getElementById("date").value;
 
-        console.log({Title: t, OpeningText: ot, ReleaseDate: rd});
+        props.onAddMovie({title: t, openingText: ot, releaseDate: rd});
     }
 
     return (
